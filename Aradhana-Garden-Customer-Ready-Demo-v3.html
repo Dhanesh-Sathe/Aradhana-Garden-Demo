@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173329">
+<title>Aradhana Garden Restaurant | Alandi</title>
+<meta name="description" content="Aradhana Garden Restaurant — pure vegetarian dining, stay and celebrations in Alandi, Pune.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--green:#173329;--green2:#254b3c;--cream:#f5f0e5;--paper:#fffdf8;--ink:#18221d;--muted:#68716a;--line:#dcd4c5;--gold:#c8a56a;--rust:#9d6047}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:84px}body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.container{width:min(1180px,calc(100% - 36px));margin:auto}
+.topbar{background:var(--green);color:#e9e4d9;text-align:center;font-size:11px;letter-spacing:.05em;padding:7px 12px}
+header{position:sticky;top:0;z-index:50;background:rgba(245,240,229,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:10px}.brandMark{width:40px;height:40px;border:1px solid var(--green);border-radius:50%;display:grid;place-items:center;font:500 19px "Playfair Display"}.brandName{font:600 18px "Playfair Display";line-height:1.05}.brandSub{font-size:9px;color:var(--rust);letter-spacing:.17em;text-transform:uppercase;margin-top:3px}
+.navlinks{display:flex;gap:25px;font-size:13px;font-weight:600}.navlinks a{color:#536058}.navlinks a:hover{color:var(--green)}.navActions{display:flex;gap:8px}.btn{min-height:44px;padding:0 18px;border:1px solid var(--green);border-radius:4px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;cursor:pointer}.btn.dark{background:var(--green);color:white}.btn.outline{background:transparent;color:var(--green)}.btn.rust{background:var(--rust);border-color:var(--rust);color:white}.hamb{display:none;border:0;background:none;font-size:25px;color:var(--green);padding:7px}
+.mobileMenu{display:none;border-top:1px solid var(--line);background:var(--cream);padding:8px 18px 18px}.mobileMenu a{display:block;padding:13px 0;border-bottom:1px solid var(--line);font-weight:600;font-size:14px}.mobileMenu .mBtns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+
+.hero{padding:68px 0 74px}.heroGrid{display:grid;grid-template-columns:1fr .86fr;gap:68px;align-items:center}.eyebrow{color:var(--rust);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:17px}
+h1,h2,h3{font-family:"Playfair Display",serif;font-weight:600;line-height:1.07}h1{font-size:clamp(48px,7vw,84px);letter-spacing:-.045em}h1 em{font-weight:500;color:var(--green2)}.heroText{font-size:17px;color:var(--muted);max-width:580px;margin:22px 0 28px}.actions{display:flex;gap:9px;flex-wrap:wrap}
+.heroFacts{display:flex;gap:28px;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}.fact strong{font:600 20px "Playfair Display";display:block}.fact span{font-size:11px;color:var(--muted)}
+.heroVisual{position:relative;min-height:515px}.heroPhoto{position:absolute;right:0;top:0;width:84%;height:405px;overflow:hidden;border-radius:4px;background:#d4ccbb}.heroPhoto img{width:100%;height:100%;object-fit:cover;filter:saturate(.78)}.heroPanel{position:absolute;left:0;bottom:0;width:54%;min-height:205px;background:var(--green);color:#fff;padding:28px;border-radius:4px;display:flex;flex-direction:column;justify-content:space-between}.heroPanel small{font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:#d6c8a9}.heroPanel b{font:500 39px/1 "Playfair Display"}.heroPanel span{font-size:11px;color:#d5ddd7}
+.quick{background:var(--green);color:white}.quickGrid{display:grid;grid-template-columns:repeat(4,1fr)}.quickItem{padding:23px 25px;border-right:1px solid rgba(255,255,255,.14)}.quickItem:last-child{border:0}.quickItem b{font:600 19px "Playfair Display";display:block}.quickItem span{font-size:11px;color:#cbd5cd}
+
+.section{padding:96px 0}.section.paper{background:var(--paper)}.heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}.heading h2{font-size:clamp(38px,5vw,59px);max-width:690px}.heading p{max-width:390px;color:var(--muted);font-size:14px}
+.serviceGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{min-height:335px;padding:31px;background:var(--paper);border:1px solid var(--line);border-radius:4px;display:flex;flex-direction:column;justify-content:space-between}.service.featured{background:var(--green);color:#fff;border-color:var(--green)}.service.featured p,.service.featured .serviceFoot{color:#d2ddd4}.serviceNum{font-size:10px;font-weight:700;letter-spacing:.16em;color:var(--rust)}.service h3{font-size:32px;margin:30px 0 10px}.service p{font-size:13px;color:var(--muted);max-width:300px}.serviceFoot{font-size:12px;font-weight:700;color:var(--green)}
+
+.split{display:grid;grid-template-columns:.88fr 1.12fr;gap:75px;align-items:center}.splitImage{height:500px;position:relative}.splitImage img{height:390px;width:80%;margin-left:auto;object-fit:cover;border-radius:4px}.note{position:absolute;left:0;bottom:0;background:var(--rust);color:white;width:57%;padding:25px;border-radius:4px}.note b{font:500 34px "Playfair Display";display:block}.splitCopy h2{font-size:clamp(40px,5vw,62px)}.splitCopy p{color:var(--muted);font-size:15px;margin:19px 0 25px;max-width:610px}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}.ticks div{font-size:12px;font-weight:700}.ticks div:before{content:"✓";color:var(--rust);margin-right:8px}
+
+.menuSection{background:var(--green);color:white}.menuGrid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.menuCopy h2{font-size:clamp(42px,5vw,64px)}.menuCopy p{color:#d4ded6;margin:20px 0 25px;max-width:520px}.menuList{border-top:1px solid rgba(255,255,255,.2)}.menuLine{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.2);font:500 19px "Playfair Display"}.menuLine span{font:400 11px "DM Sans";color:#c9d2cb;align-self:center}
+.stay{display:grid;grid-template-columns:1.1fr .9fr;gap:15px}.stayMain{min-height:430px;background:#e8dfd0;padding:48px;border-radius:4px;display:flex;flex-direction:column;justify-content:end}.stayMain h2{font-size:clamp(43px,5vw,65px)}.stayMain p{color:var(--muted);max-width:540px;margin:17px 0 25px}.staySide{display:grid;grid-template-columns:1fr 1fr;gap:15px}.stayCard{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:28px;min-height:205px}.stayCard h3{font-size:28px;margin:25px 0 8px}.stayCard p{font-size:12px;color:var(--muted)}
+
+.eventBand{background:#e8dfd0}.eventGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.eventCopy h2{font-size:clamp(42px,5vw,63px)}.eventCopy p{color:var(--muted);margin:18px 0 25px;max-width:520px}.eventTags{display:flex;gap:8px;flex-wrap:wrap}.tag{padding:8px 12px;border:1px solid #cfc5b3;border-radius:99px;font-size:11px;font-weight:700}.eventInfo{background:var(--green);color:white;padding:42px;border-radius:4px}.eventInfo h3{font-size:31px}.eventInfo p{color:#d3ddd5;margin:10px 0 25px;font-size:13px}.eventRows{border-top:1px solid rgba(255,255,255,.17)}.eventRows div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.17);font-size:12px}.eventRows span{color:#c6d0c8}
+
+.location{display:grid;grid-template-columns:1fr 1fr;background:var(--green);color:white;border-radius:4px;overflow:hidden}.locationCopy{padding:58px}.locationCopy h2{font-size:clamp(42px,5vw,60px)}.locationCopy p{color:#d4ded6;margin:18px 0 25px}.locationMap{min-height:390px;position:relative;background:radial-gradient(circle at 20% 30%,rgba(255,255,255,.11) 0 2px,transparent 3px),linear-gradient(135deg,#496555,#1d382d);overflow:hidden}.road{position:absolute;height:1px;background:rgba(255,255,255,.18);width:130%;left:-10%;top:42%;transform:rotate(24deg)}.road.r2{top:67%;transform:rotate(-20deg)}.pin{position:absolute;left:47%;top:43%;width:22px;height:22px;background:var(--rust);border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 0 0 10px rgba(157,96,71,.18)}.pinText{position:absolute;left:calc(47% + 30px);top:40%;font-size:13px;font-weight:700}
+
+.enquiry{background:var(--paper);border:1px solid var(--line);padding:48px;border-radius:4px}.enqGrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px}.enquiry h2{font-size:clamp(42px,5vw,60px)}.enquiryIntro p{color:var(--muted);font-size:14px;margin-top:17px}.form{display:grid;gap:13px}.two{display:grid;grid-template-columns:1fr 1fr;gap:13px}label{font-size:11px;font-weight:700}input,select,textarea{display:block;width:100%;margin-top:5px;padding:12px;border:1px solid var(--line);background:var(--cream);border-radius:4px;color:var(--ink);font-size:13px}textarea{min-height:105px;resize:vertical}.success{display:none;background:#e5efe6;color:#31533a;padding:12px;border-radius:4px;font-size:12px}
+
+footer{background:#10271e;color:#d4dbd5;padding:60px 0 23px}.footGrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:45px;padding-bottom:45px}.footGrid h3{color:#fff;font-size:23px;margin-bottom:10px}.footGrid p,.footGrid a{font-size:12px;color:#aebbb2}.footGrid a{display:block;margin:6px 0}.footBottom{border-top:1px solid rgba(255,255,255,.12);padding-top:17px;font-size:10px;color:#849189;display:flex;justify-content:space-between;gap:20px}
+.float{position:fixed;right:18px;bottom:18px;z-index:40;width:55px;height:55px;border-radius:50%;background:#24a35b;color:white;display:grid;place-items:center;font-weight:800;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.reveal{opacity:0;transform:translateY(15px);transition:.65s ease}.reveal.show{opacity:1;transform:none}
+
+@media(max-width:900px){
+ .navlinks,.navActions{display:none}.hamb{display:block}.mobileMenu.open{display:block}
+ .hero{padding:48px 0 60px}.heroGrid,.split,.menuGrid,.stay,.eventGrid,.location,.enqGrid{grid-template-columns:1fr;gap:38px}
+ .heroVisual{min-height:420px}.heroPhoto{width:90%;height:340px}.heroPanel{width:62%;min-height:180px}.quickGrid{grid-template-columns:1fr 1fr}.quickItem{border-bottom:1px solid rgba(255,255,255,.14)}.quickItem:nth-child(2){border-right:0}
+ .section{padding:75px 0}.heading{display:block}.heading p{margin-top:13px}.serviceGrid{grid-template-columns:1fr}
+ .splitImage{height:420px}.splitImage img{height:330px}.ticks{grid-template-columns:1fr 1fr}
+ .staySide{grid-template-columns:1fr 1fr}.locationMap{min-height:300px}
+ .footGrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+ .container{width:calc(100% - 28px)}.topbar{font-size:9px}
+ .nav{height:68px}.brandName{font-size:16px}.brandSub{font-size:8px}.brandMark{width:36px;height:36px}
+ h1{font-size:clamp(43px,14vw,64px)}.heroText{font-size:15px}.heroFacts{gap:17px;flex-wrap:wrap}.fact strong{font-size:18px}
+ .heroVisual{min-height:345px}.heroPhoto{width:92%;height:270px}.heroPanel{width:70%;min-height:150px;padding:20px}.heroPanel b{font-size:31px}
+ .quickGrid{grid-template-columns:1fr 1fr}.quickItem{padding:18px 15px}.quickItem b{font-size:17px}
+ .section{padding:62px 0}.heading h2{font-size:39px}.service{min-height:290px;padding:25px}
+ .splitImage{height:340px}.splitImage img{height:260px;width:88%}.note{width:68%;padding:18px}.note b{font-size:28px}
+ .ticks{grid-template-columns:1fr}.menuGrid{gap:28px}.menuLine{font-size:17px}.staySide{grid-template-columns:1fr}.stayMain{padding:30px;min-height:370px}.eventInfo{padding:30px}.locationCopy{padding:36px}.enquiry{padding:25px}.two{grid-template-columns:1fr}
+ .footGrid{grid-template-columns:1fr}.footBottom{display:block}.footBottom span{display:block;margin-top:5px}
+ .float{width:52px;height:52px;bottom:16px;right:15px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">PURE VEGETARIAN • ALANDI ROAD, ALANDI • OPEN UNTIL 11:30 PM</div>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Aradhana Garden home">
+      <div class="brandMark">A</div>
+      <div><div class="brandName">Aradhana Garden</div><div class="brandSub">Restaurant · Lodge · Celebrations</div></div>
+    </a>
+    <nav class="navlinks">
+      <a href="#restaurant">Restaurant</a><a href="#stay">Stay</a><a href="#celebrations">Celebrations</a><a href="#visit">Visit</a>
+    </nav>
+    <div class="navActions">
+      <a class="btn outline" href="tel:02027186081">Call</a>
+      <a class="btn dark" href="#enquire">Enquire</a>
+    </div>
+    <button class="hamb" id="hamb" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobileMenu" id="mobileMenu">
+    <a href="#restaurant">Restaurant</a><a href="#stay">Stay</a><a href="#celebrations">Celebrations</a><a href="#visit">Visit</a>
+    <div class="mBtns"><a class="btn outline" href="tel:02027186081">Call</a><a class="btn dark" href="#enquire">Enquire</a></div>
+  </div>
+</header>
+
+<main id="home">
+
+<section class="hero">
+ <div class="container heroGrid">
+  <div class="reveal">
+   <div class="eyebrow">Alandi · Pune · Since 2000</div>
+   <h1>Good food.<br><em>Good stays.</em><br>Good occasions.</h1>
+   <p class="heroText">Aradhana Garden Restaurant brings together pure vegetarian dining, accommodation and spaces for gatherings — all in one destination in Alandi.</p>
+   <div class="actions"><a class="btn dark" href="#restaurant">Explore Restaurant</a><a class="btn outline" href="#enquire">Plan a visit</a></div>
+   <div class="heroFacts">
+    <div class="fact"><strong>Pure Veg</strong><span>Restaurant</span></div>
+    <div class="fact"><strong>Stay</strong><span>Accommodation</span></div>
+    <div class="fact"><strong>Events</strong><span>Celebration spaces</span></div>
+    <div class="fact"><strong>11:30 PM</strong><span>Listed closing time</span></div>
+   </div>
+  </div>
+  <div class="heroVisual reveal">
+   <div class="heroPhoto"><img src="https://cdn.venuelook.com/uploads/space_27332/1620909741_595x400.png" alt="Aradhana Garden event space"></div>
+   <div class="heroPanel"><small>The Aradhana experience</small><b>One place.<br>Many occasions.</b><span>Alandi Road · Alandi, Pune</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="quick">
+ <div class="container quickGrid">
+  <div class="quickItem"><b>Restaurant</b><span>Pure vegetarian dining</span></div>
+  <div class="quickItem"><b>Order Online</b><span>Menu available online</span></div>
+  <div class="quickItem"><b>Stay</b><span>Accommodation enquiries</span></div>
+  <div class="quickItem"><b>Celebrations</b><span>Functions & gatherings</span></div>
+ </div>
+</section>
+
+<section class="section paper" id="restaurant">
+ <div class="container">
+  <div class="heading reveal"><div><div class="eyebrow">The restaurant</div><h2>A vegetarian menu with something for every table.</h2></div><p>Public menu listings show North Indian and Chinese offerings alongside thalis, starters, main courses, rice, breads, beverages and more.</p></div>
+  <div class="serviceGrid">
+   <article class="service reveal"><span class="serviceNum">01 / DINE IN</span><div><h3>Everyday dining</h3><p>Position the restaurant as the first stop for a meal, family gathering or group dining occasion.</p></div><div class="serviceFoot">Pure vegetarian · Alandi</div></article>
+   <article class="service featured reveal"><span class="serviceNum">02 / MENU</span><div><h3>Explore the menu</h3><p>Thalis, starters, main course, rice, breads, Chinese dishes, beverages and special dishes are listed online.</p></div><a class="btn rust" href="https://www.swiggy.com/city/pune/aradhana-garden-restaurant-alandi-bhosari-rest141346" target="_blank" rel="noopener" style="width:max-content">View Online Menu</a></article>
+   <article class="service reveal"><span class="serviceNum">03 / ORDER</span><div><h3>Order online</h3><p>Give customers a direct route to the existing online ordering presence while keeping the website as the central brand destination.</p></div><a class="serviceFoot" href="https://www.swiggy.com/city/pune/aradhana-garden-restaurant-alandi-bhosari-rest141346" target="_blank" rel="noopener">Order via Swiggy →</a></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="menu">
+ <div class="container menuGrid">
+  <div class="menuCopy reveal">
+   <div class="eyebrow" style="color:#d6b879">A taste of Aradhana</div>
+   <h2>From thalis to special dishes.</h2>
+   <p>The online menu currently includes dishes such as Aradhana Special Veg, Dal Tadka, Paneer Butter Masala, Veg Dum Biryani and vegetarian thali options.</p>
+   <a class="btn rust" href="https://www.swiggy.com/city/pune/aradhana-garden-restaurant-alandi-bhosari-rest141346" target="_blank" rel="noopener">Explore full menu</a>
+  </div>
+  <div class="menuList reveal">
+   <div class="menuLine">Aradhana Special Veg <span>MAIN COURSE</span></div>
+   <div class="menuLine">Dal Tadka <span>MAIN COURSE</span></div>
+   <div class="menuLine">Paneer Butter Masala <span>MAIN COURSE</span></div>
+   <div class="menuLine">Veg Dum Biryani <span>RICE</span></div>
+   <div class="menuLine">Aradhana Deluxe Thali <span>THALI</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="stay">
+ <div class="container">
+  <div class="heading reveal"><div><div class="eyebrow">Stay at Aradhana</div><h2>A convenient place to stay while you're in Alandi.</h2></div><p>Room categories, rates, amenities and availability can be added once confirmed by the property.</p></div>
+  <div class="stay">
+   <div class="stayMain reveal"><div class="eyebrow">Accommodation</div><h2>Stay simple.<br>Enquire directly.</h2><p>Let guests understand the accommodation offering and contact the property directly for availability.</p><a class="btn dark" href="#enquire" style="width:max-content">Ask about rooms</a></div>
+   <div class="staySide">
+    <div class="stayCard reveal"><div class="eyebrow">01</div><h3>Rooms</h3><p>Verified room categories and photographs can be presented here in the final website.</p></div>
+    <div class="stayCard reveal"><div class="eyebrow">02</div><h3>Availability</h3><p>Guests can send their preferred dates and requirements directly.</p></div>
+    <div class="stayCard reveal"><div class="eyebrow">03</div><h3>Contact</h3><p>Call or enquire without depending only on third-party listings.</p></div>
+    <div class="stayCard reveal"><div class="eyebrow">04</div><h3>Future</h3><p>Online booking can be added later if the business requires it.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section eventBand" id="celebrations">
+ <div class="container eventGrid">
+  <div class="eventCopy reveal">
+   <div class="eyebrow">Celebrations & functions</div>
+   <h2>Make the occasion part of the experience.</h2>
+   <p>Public venue listings show Aradhana associated with function and event spaces. The website can give customers a dedicated path for weddings, family functions and gatherings.</p>
+   <div class="eventTags"><span class="tag">Weddings</span><span class="tag">Family functions</span><span class="tag">Gatherings</span><span class="tag">Event enquiries</span></div>
+  </div>
+  <div class="eventInfo reveal">
+   <h3>Plan your function</h3><p>Keep the first enquiry simple. Detailed capacity, hall/lawn information, packages and pricing can be added after the owner confirms them.</p>
+   <div class="eventRows">
+    <div>Venue information <span>To be confirmed</span></div>
+    <div>Packages <span>To be confirmed</span></div>
+    <div>Capacity <span>To be confirmed</span></div>
+    <div>Availability <span>Direct enquiry</span></div>
+   </div>
+   <a class="btn rust" href="#enquire" style="margin-top:23px">Enquire for an event</a>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="visit">
+ <div class="container">
+  <div class="location reveal">
+   <div class="locationCopy">
+    <div class="eyebrow" style="color:#d6b879">Find Aradhana</div>
+    <h2>Right on Alandi Road.</h2>
+    <p><strong>House 3207, Alandi Devachi,<br>Alandi, Pune, Maharashtra 412105</strong></p>
+    <p>Public listings also describe the location as near New Bridge / Behind Telephone Exchange.</p>
+    <div class="actions">
+     <a class="btn rust" href="https://www.google.com/maps/search/?api=1&query=Aradhana+Garden+Restaurant+Alandi+Pune" target="_blank" rel="noopener">Get directions</a>
+     <a class="btn outline" style="color:white;border-color:#d3ddd5" href="tel:8600621111">Call 86006 21111</a>
+    </div>
+   </div>
+   <div class="locationMap"><div class="road"></div><div class="road r2"></div><div class="pin"></div><div class="pinText">Aradhana Garden</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section paper" id="enquire">
+ <div class="container">
+  <div class="enquiry reveal">
+   <div class="enqGrid">
+    <div class="enquiryIntro"><div class="eyebrow">Direct enquiry</div><h2>Tell us what you're planning.</h2><p>Restaurant, room stay or celebration — choose your requirement and send an enquiry. In the live website, this can connect to WhatsApp, email or an enquiry dashboard.</p></div>
+    <form class="form" id="enquiryForm">
+     <div class="two"><label>Name<input required placeholder="Your name"></label><label>Phone<input required type="tel" placeholder="Your phone"></label></div>
+     <div class="two"><label>I'm interested in<select><option>Restaurant</option><option>Stay / Rooms</option><option>Wedding / Function</option><option>General Enquiry</option></select></label><label>Preferred date<input type="date"></label></div>
+     <label>Message<textarea placeholder="Tell us a little about your requirement..."></textarea></label>
+     <button class="btn dark" type="submit">Send enquiry</button>
+     <div class="success" id="success">Demo enquiry received. In the production website, this can be connected to the owner's preferred enquiry channel.</div>
+    </form>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footGrid">
+   <div><h3>Aradhana Garden</h3><p>Restaurant · Lodge · Celebrations</p><p style="margin-top:10px">House 3207, Alandi Devachi, Alandi, Pune, Maharashtra 412105</p></div>
+   <div><h3>Explore</h3><a href="#restaurant">Restaurant</a><a href="#stay">Stay</a><a href="#celebrations">Celebrations</a><a href="#visit">Visit</a></div>
+   <div><h3>Contact</h3><a href="tel:02027186081">020 2718 6081</a><a href="tel:8600621111">86006 21111</a><a href="#enquire">Send an enquiry</a><a href="https://www.swiggy.com/city/pune/aradhana-garden-restaurant-alandi-bhosari-rest141346" target="_blank" rel="noopener">Order online</a></div>
+  </div>
+  <div class="footBottom"><span>© 2026 Aradhana Garden Restaurant</span><span>Website preview • Final business details to be confirmed with the owner</span></div>
+ </div>
+</footer>
+
+<a class="float" href="#enquire" aria-label="Enquire">↗</a>
+
+<script>
+const menu=document.getElementById('mobileMenu'),hamb=document.getElementById('hamb');
+hamb.addEventListener('click',()=>{const open=menu.classList.toggle('open');hamb.setAttribute('aria-expanded',open)});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');hamb.setAttribute('aria-expanded','false')}));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+ const id=a.getAttribute('href'); if(id.length>1){const el=document.querySelector(id); if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}}
+}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+document.getElementById('enquiryForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('success').style.display='block';e.target.querySelector('button').disabled=true;e.target.querySelector('button').textContent='Enquiry received';});
+</script>
+</body>
+</html>
